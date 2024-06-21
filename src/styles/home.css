@@ -1,0 +1,81 @@
+.cardMargin {
+    width: 18rem;
+    height: 30rem;
+    margin-right: 1rem;
+}
+
+
+.img {
+    width: 18rem;
+    height: 20rem;
+    border-radius: 2%;
+}
+
+.imgInvidividual{
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+body{
+    background-image: url("https://windowscustomization.com/wp-content/uploads/2018/08/star-wars.gif");
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    height: 100vh;
+    
+    
+}
+.custom-card {
+    opacity: 0.8; /* Opacidad del card */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.custom-card:hover {
+    opacity: 1; /* Aumenta la opacidad al pasar el mouse */
+}
+.card{
+    color: white;
+    background-color: black;
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .character-details {
+    animation: slideIn 1s ease-in-out;
+  }
+  .imgAnimation {
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 1s; 
+    opacity: 0; 
+    animation-fill-mode: forwards; 
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .btn-glow {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .btn-glow:hover {
+    box-shadow: 0 0 10px 5px rgba(247, 7, 7, 0.493);
+  }
+  .border{
+    border-radius: 5%;
+  }
